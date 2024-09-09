@@ -16,3 +16,10 @@ https://drive.google.com/file/d/1R-I9jiGWQMDjUIgOOP8v6g_qfZXTs6H0/view?usp=shari
 # Requirements
 You should have a programming software like Python, using libraries pandas: numpy, sciki-learn, matplotlib
 
+# Project Findings
+The study analyzed data comprising 129,024 individuals, including 21,303 with type 2 diabetes, from the Center for Disease Control, 2014 Behavioral Risk Factor Surveillance System, annotated with variables including BMI, age, exercise frequency, smoking status, sleep duration, socioeconomic status (SES), healthcare access, and geographical factors. The data was split into 80% training and 20% testing sets.
+
+Six Machine Learning models (Logistic Regression, Gaussian Naive Bayes, Random Forest, Gradient Boosting, Neural Network and Decision Trees) were trained, and their performances were compared based on accuracy, sensitivity, specificity, and the Area Under Curve (AUC). Feature importance analysis was conducted to identify the most predictive variables.
+
+The predictive models used achieved a high area under the curve (AUC ranging from 0.69 to 0.81). However, the Gradient Boosting Model (GBM) and Neural Network outperformed others with similar results of accuracy of 0.86 and 0.85 respectively, specificity of 0.99, and AUC of 0.81. The Gaussian Naive Bayes model presented a balanced sensitivity-specificity trade-off (Accuracy: 0.80, Sensitivity: 0.43, Specificity: 0.87, AUC: 0.75) but fell short in overall accuracy and AUC compared to Gradient Boosting and Neural Network. This study highlighted that people who are unable to work (Coef = 0.5649), or who had a Health Care Coverage with the Alaska Native/Indian Health Service (Coef = 0.6096), or who have not had a medical checkup in the last 5 years or more (Coef =-1.0077) have higher risk for type 2 diabetes.
+
